@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/utils/globals/src",
+  "prefix": "hyperconverged",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/utils/globals"],
+      "options": {
+        "jestConfig": "libs/utils/globals/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/utils/globals/src/**/*.ts",
+          "libs/utils/globals/src/**/*.html"
+        ]
+      },
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": []
+}
