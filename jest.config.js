@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/utils/globals',
+  coverageDirectory: '../../../coverage/packages/uimatrix/utils',
   transform: {
     '^.+.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

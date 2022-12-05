@@ -92,6 +92,7 @@ export interface Column {
 }
 
 export interface DataView {
+
   title: string;
   component: ViewType;
   dataFrom: string;
