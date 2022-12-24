@@ -2,7 +2,7 @@
   "name": "utils",
   "projectType": "library",
   "sourceRoot": "packages/uimatrix/utils/src",
-  "prefix": "sc",
+  "prefix": "ui",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
