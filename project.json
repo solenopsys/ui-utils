@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "ui-utils",
   "projectType": "library",
   "sourceRoot": "packages/uimatrix/ui-utils/src",
   "prefix": "ui",
