@@ -1,5 +1,6 @@
 import { Observable } from "rxjs";
 import { ProviderToken } from "@angular/core";
+import {IdTitle} from "@solenopsys/ui-controls";
 
 export enum FacetType {
   NUMBER,
@@ -125,3 +126,6 @@ export interface DataProvider {
   byId(id: string): Observable<string>;
 }
 
+export interface FreeProvider {
+  initFilterSelector(str: Observable<string>): Observable<IdTitle[]>;
+}
