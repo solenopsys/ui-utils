@@ -3,5 +3,6 @@ export * from './lib/click-outside.directive';
 export * from './lib/base-dir.pipe';
 export * from './lib/model';
 export * from './lib/declared.service';
+export * from '../../ui-templates/src/lib/dynamic/dynamic.abstract';
 
 
