@@ -28,7 +28,7 @@ export class DeclaredService {
     }
 
     addComps(module: string, list: any[]) {
-        console.log("ADD COMP")
+      //  console.log("ADD COMP")
         this.components[module] = {}
         for (const comp of list) {
             this.components[module][comp.name] = comp;
