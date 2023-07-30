@@ -67,18 +67,18 @@ export interface DataItemInterface {
 }
 
 
-export interface Facet {
+export type Facet = {
   name: string;
   type: FacetType;
 }
 
-export interface EntityLink {
+export type EntityLink = {
   facets?: Facet[];
   titleField: string;
   multiple: boolean;
 }
 
-export interface FormField {
+export type FormField  ={
   title: string;
   type: FieldType;
   link?: EntityLink;
@@ -86,19 +86,21 @@ export interface FormField {
   key: string;
 }
 
-export interface Column {
+export type Column = {
   name: string;
   key: string;
 }
 
-export interface DataView {
+
+
+export type DataView ={
 
   title: string;
   component: ViewType;
   dataFrom: string;
 }
 
-export interface FormConfig {
+export type FormConfig= {
   title: string;
   nameField?: string;
   fields: FormField[];
@@ -106,15 +108,15 @@ export interface FormConfig {
   views?: DataView[];
 }
 
-export interface DataPageConfig extends FormConfig {
+export type DataPageConfig = {
   title: string;
   listQ: string;
   deleteQ?: string;
   massCommand?:boolean
   dataProvider: ProviderToken<DataListInterface | DataItemInterface>
-}
+}& FormConfig;
 
-export interface EntityTitle {
+export type EntityTitle = {
   title: string;
   uid: string;
 }
